@@ -7,7 +7,7 @@
 header {
     background: rgba(0,0,0,0.7);
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 .nav-enlace{
     display: inline-block;
@@ -19,28 +19,27 @@ header {
     text-decoration: none;
 }
 .nav-enlace:hover{
-    background: rgba(37, 233, 233, 0.516);
+    background: rgba(178, 252, 252, 0.895);
 }
 nav {
-    /* float: left;
-    text-align: center; */
     background: #ccccff;
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
-
 #logo{
     margin: auto;
     height: 250px;
-    margin-top: 50px;
-    width: ;
+    margin-top: 25px;
     text-align: center;
 }
 
+
+
+
 body{
     background-color: bisque;
-    margin: 0px;
+    margin: 0;
 }
 .container{
     flex-direction: column;
