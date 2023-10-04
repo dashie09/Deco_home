@@ -1,13 +1,14 @@
 * a{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
     background: rgba(0,0,0,0.7);
     width: 100%;
     position: absolute;
+    
 }
 .nav-enlace{
     display: inline-block;
@@ -27,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-#logo{
+.logo{
     margin: auto;
     height: 250px;
     margin-top: 25px;
@@ -39,7 +40,8 @@ nav {
 
 body{
     background-color: bisque;
-    margin: 0;
+    margin: 0px;
+    min-height: 100vh;
 }
 .container{
     flex-direction: column;
@@ -52,9 +54,11 @@ body{
 .container__videoLoop{
     display: flex;
     justify-content: center;
-    border: 1px double #fcbc6f7a;
+    /* border: 1px double #fcbc6f7a; */
     padding-left: 20em ;
-    padding-right: 20em ;
+    padding-right: 20em ; 
+    padding-bottom: 100px;
+    height: 300px;
 }
 
 .video1{
