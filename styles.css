@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    text-align: center;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
     margin: 0px;
 }
 
-.container{
+.container__main{
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -20,23 +21,20 @@ body{
     width: 100%;
 }
 
+
+
 .container__videoLoop{
     display: flex;
     justify-content: center;
     border: 1px double #fcbc6f7a;
+    border-radius: 8px;
     padding-left: 20em ;
     padding-right: 20em ;
 }
 
 .video1{
-    width: 50em;
+    width: 100% ;
 }
-
-/* .separador{
-    border-bottom: 1px solid #fcbc6f;
-    padding: 1em;
-    margin: 10em
-} */
 
 .categorias_principales{
     display: flex;
@@ -56,18 +54,19 @@ body{
     text-align: center;    
     border-radius: 10px 10px;
     width: 14em;
-    background-color: white;
-    
+    background-color: white;  
+    transition: .5s;
 }   
+
+    .div__foto:hover{
+        transform: scale(1.1);
+        transition: 0.1s;
+        box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+    }
 
 .portada{
     border-radius: 10px 10px 0 10px;
 }
-
-.container__images{
-    border: 1px solid #FED19C;
-} 
-
 
 .titulo__catPrincipales{
     padding: 3px;
@@ -83,26 +82,30 @@ body{
     font-family: 'Amatic SC', cursive;
     font-size: 4em;
     padding: 2em 0 0 0;
+} 
+
+.container__images{
+    border: 1px solid #FED19C;
+    border-radius: 8px;
 }
- 
 
 .fila{
     display: flex;
     flex-direction: row;    
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 15em;
+    padding: 0 2em;
 }
 
 .image__container{
     display: flex;
     padding: 1em;
     border-radius: 10px;
-
 }
 
 .imagenTexto{
     display: flex;
+    flex-direction: column;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -111,122 +114,142 @@ body{
     border: 2px solid #fed19c;
 }
 
+    .imagenTexto:hover{
+        transform: scale(0.1.1);
+        transition: .5s;
+        box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+     
+    }
 
 .imagen{
     width: 19em;
     border-radius: 10px 10px 0 0px;
 }
+ 
 
-
-@media (max-width:600px){
-    body{
-        background-color: rgb(212, 196, 255);
-        margin: 0px;
-    }
-    
-    .container{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .container__videoLoop{
-        display: flex;
-        justify-content: center;
-        border: 1px double #fcbc6f7a;
-        padding-left: 20em ;
-        padding-right: 20em ;
-    }
-    
-    .video1{
-        width: 50em;
-    }
-    
-    /* .separador{
-        border-bottom: 1px solid #fcbc6f;
-        padding: 1em;
-        margin: 10em
-    } */
-    
-    .categorias_principales{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1px;
-        flex-wrap: wrap;
-        border: 10px solid #fcbc6f7a;
-        border-radius: 10px;
-        padding: 9px;
-    }
-    
+/* Vista Laptop */
+@media (min-width: 952px) and (max-width:1200px){
     .div__foto{
-        display: flex;
-        flex-direction: column;   
-        justify-content: center;
-        text-align: center;    
-        border-radius: 10px 10px;
-        width: 14em;
-        background-color: white;
-        
-    }   
-    
-    .portada{
-        border-radius: 10px 10px 0 10px;
+        width: 11em;
     }
-    
-    .container__images{
-        border: 1px solid #FED19C;
-    } 
-    
-    
-    .titulo__catPrincipales{
-        padding: 3px;
-        font-family: 'Amatic SC', cursive;
-        font-weight: bold;
-    }
-    
-    .paddingExtra{
-        margin-bottom: 5px;
-    }
-    
-    .titulo__prodDestacados{
-        font-family: 'Amatic SC', cursive;
-        font-size: 4em;
-        padding: 2em 0 0 0;
-    }
-     
-    
-    .fila{
-        display: flex;
-        flex-direction: row;    
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0 15em;
-    }
-    
-    .image__container{
-        display: flex;
-        padding: 1em;
-        border-radius: 10px;
-    
-    }
-    
+
     .imagenTexto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 19em;
-        border-radius: 10px 10px;
-        border: 2px solid #fed19c;
+        width: 15em;
     }
-    
-    
+
     .imagen{
-        width: 19em;
-        border-radius: 10px 10px 0 0px;
+        width: 15em;
     }
-    
 }
+
+/* Vista tablet */
+@media (min-width: 768px) and (max-width: 952px){      
+        body{
+           padding: none;
+        }
+        
+        .container__main{
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+        }
+
+        .container__videoLoop{
+            padding: 0;
+            width: 100%;
+            border: none;
+        }
+
+        .video1{
+            width: 100%;
+        }
+        
+        .categorias_principales{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 1px;
+            flex-wrap: wrap;
+            border: 10px solid #fcbc6f7a;
+            border-radius: 10px;
+            padding: none;
+        }
+        
+        .div__foto{
+            display: flex;
+            flex-direction: column;   
+            justify-content: center;
+            text-align: center;    
+            border-radius: 10px 10px;
+            width: 16em;
+            background-color: white; 
+        }   
+        
+        .portada{
+            border-radius: 10px 10px 0 10px;
+        }
+                
+        .titulo__catPrincipales{
+            padding: 3px;
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+        }    
+   
+        
+        .titulo__prodDestacados{
+            font-family: 'Amatic SC', cursive;
+            font-size: 4em;
+            padding: 2em 0 0 0;
+        }
+         
+        
+        .fila{
+            display: flex;
+            flex-direction: row;    
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 0em;
+        }
+        
+        .ultimafila{
+            display: flex;
+            flex-direction: row;    
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 3em;
+        }
+
+        .image__container{
+            display: flex;
+            border-radius: 10px;
+        
+        }
+        
+        .imagenTexto{
+            display: flex; 
+            width: 17em;
+            border-radius: 10px 10px;
+            border: 2px solid #fed19c;
+        }
+        
+        h3{
+            font-size: 1em;
+            text-align: center;
+        }
+        
+        .imagen{
+            width: 17em;
+            border-radius: 10px 10px 0 0px;
+        }        
+    }
+
+
+    @media (min-width:400px) and (max-width:768px){
+        .video1{
+            display: none;
+        }
+
+        .container__videoLoop{
+            padding: 0;
+        }
+    }
