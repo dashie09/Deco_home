@@ -1,202 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Deco & Home</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- <h1 class="titulo">Deco & Home</h1> -->
-
-    <main class="container__main">
-        <section class="container__videoLoop">
-            <video src="./Imagenes y videos/video2.mp4" class="video1" autoplay muted loop></video>
+    <main  id="inicio-pagina">
+    <!-- ---------- video-hero de la página ------------->
+        <section class="video-hero">
+            <video src="./imagenes-y-videos/videoComprimidoSinTexto.mp4" loop autoplay muted></video>
+            <div class="frase-video">
+                <h2>TODO LO QUE SOÑASTE<br> PARA TU HOGAR <br>EN UN SOLO LUGAR</h2>
+            </div>
+        </section> 
+            <!-- ---------- secciones destacadas -------------- -->
+            <div class="container-txtSecciones">
+                <h2>SECCIONES DESTACADAS</h2>
+            </div>
+        <section class="destacados">
+            <a href="#">
+                <div class="destacados-imgh2">
+                    <img src="./imagenes-y-videos/textil-a.jpg" alt="">
+                    <h2>TEXTIL</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="destacados-imgh2">                    
+                    <img src="./imagenes-y-videos/adornos.jpg" alt="">
+                    <h2>ADORNOS</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="destacados-imgh2">                    
+                    <img src="./imagenes-y-videos/plantas.png" alt="">
+                    <h2>PLANTAS</h2>
+                </div>
+            </a>             
+            <a href="">
+                <div class="destacados-imgh2">                    
+                    <img src="./imagenes-y-videos/accesorio.png" alt="">
+                    <h2>ACCESORIOS</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="destacados-imgh2">                    
+                    <img src="./imagenes-y-videos/herrajes.png" alt="">
+                    <h2>HERRAJES</h2>
+                </div>
+            </a>
+            <a href="">
+                <div class="destacados-imgh2">                    
+                    <img src="./imagenes-y-videos/lampara (2).jpg" alt="">
+                    <h2>LAMPARAS</h2>
+                </div>
+            </a>
         </section>
-        <div class="categorias_principales"> 
-            <a href="./textiles.html" target="_blank">
-                <div class="div__foto">
-                    <img class="portada" src="./Imagenes y videos/textil-a.jpg" alt="">
-                    <h3 class="titulo__catPrincipales">TEXTIL</h3>
-                </div>
-            </a>
-            <a href="./adornos.html">
-                <div class="div__foto">
-                    <img class="portada" src="./Imagenes y videos/Guirnalda-esferas-color-x20.jpg" alt="">
-                    <h3 class="titulo__catPrincipales">ADORNOS</h3>
-                </div>
-            </a>
-            <a href="./plantas.html">
-                <div class="div__foto">
-                    <img class="portada" src="./Imagenes y videos/flower-2592070_1280-removebg-preview.png" alt="">
-                    <h3 class="titulo__catPrincipales">PLANTAS</h3>
-                </div>
-            </a>
-            <a href="lamparas.html">
-                <div class="div__foto">
-                    <img class="portada" src="./Imagenes y videos/lamparaColgante.jpg" alt="">
-                    <h3 class="titulo__catPrincipales">LAMPARA</h3>
-                </div>
-            </a>
-            <a href="accesorios.html">
-                <div class="div__foto">
-                    <img class="portada  paddingExtra" src="./Imagenes y videos/accesorio.jpg" alt="">
-                    <h3 class="titulo__catPrincipales">ACCESORIOS</h3>    
-                </div>
-            </a>
-            <a href="herrajes.html">
-                <div class="div__foto">
-                    <img class="portada  paddingExtra" src="./Imagenes y videos/herrajes.jpg" alt="">
-                    <H3 class="titulo__catPrincipales">HERRAJES</H3>
-                </div>
-            </a>                
-        </div>
-        <!-- <div class="separador">
-        </div> -->
-
-                <!-- ---------------  PRODUCTOS DESCATADOS   ------------------------- -->
-
-        <div class="productos_destacados">
-            <h2 class="titulo__prodDestacados">PRODUCTOS DESTACADOS</h2>
-        </div>
-        <section class="container__images">
-            <div class="fila">
-                <div class="image__container">
-                    <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen1.png" alt="">
-                            <h3>SILLON OCRE GAMUZADO</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="image__container">
-                    <a href="">
-                       <div class="imagenTexto">
-                           <img class="imagen" src="./Imagenes y videos/imagen2.png" alt="">
-                           <h3>MUEBLE PARA COCINA</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="image__container">
-                    <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen3.png" alt="">
-                            <h3>ESCRITORIO MODERNO</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="image__container">
-                    <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen4.png" alt="">
-                            <h3>ARMARIO ORGANIZADOR</h3>
-                        </div>
-                    </a>
-                </div>
+    <!-- ----------- Productos seleccionados -------------- -->
+            <div class="txtSeleccionados">
+                <h2>SELECCIONADOS</h2>
             </div>
-            <div class="fila">
-                <div class="image__container">
+        <section  class="prodSeleccionados">
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen5.png" alt="">
-                            <h3>MESA PARA SMARTV</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen1.png" alt="">
+                        <h2>Sillón ocre gamuzado</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen6.png" alt="">
-                            <h3>SILLON TELA VERDE</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen2.png" alt="">
+                        <h2>Mueble para baño</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen7.png" alt="">
-                            <h3>MUEBLE PARA COCINA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen3.png" alt="">
+                        <h2>Mesa chica con cajón</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen8.png" alt="">
-                            <h3>ESCRITORIO HIERRO/MADERA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen4.png" alt="">
+                        <h2>Mesa de luz </h2>
                     </a>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen9.png" alt="">
-                            <h3>MUEBLE ORGANIZADOR</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen5.png" alt="">
+                        <h2>Mesa para smartv</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen10.png" alt="">
-                            <h3>SILLON MADERA Y CUERINA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen6.png" alt="">
+                        <h2>Sillón tela verde</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen11.jpg" alt="">
-                            <h3>PLACARD MADERA LAMINADA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen7.png" alt="">
+                        <h2>Organizador para cocina</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen12.jpeg" alt="">
-                            <h3>VELADOR NORDICO</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen8.png" alt="">
+                        <h2>Escritorio hierro/madera</h2>
                     </a>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen13.png" alt="">
-                            <h3>MUEBLE ORGANIZADOR</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen9.png" alt="">
+                        <h2>Mueble organizador </h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen14.png" alt="">
-                            <h3>SILLON MADERA Y CUERINA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen10.png" alt="">
+                        <h2>Sillón ecocuero verde</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen15.png" alt="">
-                            <h3>PLACARD MADERA LAMINADA</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen11.jpg" alt="">
+                        <h2>Placard madera laminada</h2>
                     </a>
-                </div>
-                <div class="image__container">
+                </article>
+                <article class="prodSeleccionados-imgh2">
                     <a href="">
-                        <div class="imagenTexto">
-                            <img class="imagen" src="./Imagenes y videos/imagen16.jpg" alt="">
-                            <h3>VELADOR NORDICO</h3>
-                        </div>
+                        <img src="./imagenes-y-videos/imagen12.jpeg" alt="">
+                        <h2>Velador madera</h2>
                     </a>
-                </div>
-            </div>
+                </article>
+                <article class="prodSeleccionados-imgh2">
+                    <a href="">
+                        <img src="./imagenes-y-videos/imagen13.png" alt="">
+                        <h2>Biblioteca con cajones</h2>
+                    </a>
+                </article>
+                <article class="prodSeleccionados-imgh2">
+                    <a href="">
+                        <img src="./imagenes-y-videos/imagen14.png" alt="">
+                        <h2>Porta lámparas de madera</h2>
+                    </a>
+                </article>
+                <article class="prodSeleccionados-imgh2">
+                    <a href="">
+                        <img src="./imagenes-y-videos/imagen15.png" alt="">
+                        <h2>Baúl para juguetes</h2>
+                    </a>
+                </article>
+                <article class="prodSeleccionados-imgh2">
+                    <a href="">
+                        <img src="./imagenes-y-videos/imagen16.jpg" alt="">
+                        <h2>Mesa de luz laminada</h2>
+                    </a>
+                </article>                
         </section>
     </main>
+    <div class="botonSubir">
+        <a href="#inicio-pagina">
+            <svg viewBox="-21 -125 682.66669 682" xmlns="http://www.w3.org/2000/svg">
+            <path d="m521.722656 425.378906-201.238281-205.601562-201.054687 204.167968-119.429688-117.648437 320.445312-312.878906 319.554688 313.683593zm-201.132812-276.796875 201.511718 205.878907 47.035157-47.03125-248.785157-244.214844-249.121093 243.242187 47.660156 46.945313zm0 0"/></svg>
+        </a>
+    </div>
 </body>
 </html>
