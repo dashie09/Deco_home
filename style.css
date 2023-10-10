@@ -174,7 +174,17 @@ main{
 
         .prodSeleccionados-imgh2 h2{
             font-size: 1.4em;
-        }    
+        }  
+    
+    .botonSubir{
+        display: none;
+    }
+
+    svg{
+        display: none;
+    }    
+
+
 }
 
 @media( min-width: 768px) and (max-width:1024px){
@@ -196,6 +206,22 @@ main{
         .prodSeleccionados-imgh2 h2{
             font-size: 1.4em;
         }
+    
+    .botonSubir{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 3em;
+        background-color: rgb(245, 245, 245);
+    }
+
+    svg{
+        width: 8em;
+        font-size: 11px;
+        fill: #4E2780;
+    }
+
 }
 
 @media( min-width: 1024px) and (max-width: 1630px){
@@ -214,6 +240,21 @@ main{
         .frase-video h2{
             font-size: 5em;
         }
+
+    .botonSubir{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 3em;
+        background-color: rgb(245, 245, 245);
+    }
+
+    svg{
+        width: 8em;
+        font-size: 11px;
+        fill: #4E2780;
+    }   
 }
 
 @media (min-width:1630px) and (max-width: 1920px){
@@ -248,6 +289,7 @@ main{
         justify-content: flex-end;
         align-items: flex-end;
         padding-bottom: 3em;
+        background-color: rgb(245, 245, 245);
     }
 
     svg{
