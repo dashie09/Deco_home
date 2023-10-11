@@ -85,13 +85,18 @@ main{
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.13);
     border-radius: 13px;
-    box-shadow: 4px 1px 9px rgba(0, 0, 0, 0.062);
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.062);
     width: 14em;
 }
 
 .destacados-imgh2 img{
     width: 12em;
+}
 
+.destacados-imgh2:hover{
+    transform: scale(0,9.0,5);
+    transition: 0.1s;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .destacados-imgh2 h2{
@@ -118,6 +123,10 @@ main{
     padding: 1em;
 }
 
+.prodSeleccionados-imgh2 img:hover{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
 .prodSeleccionados-imgh2 img{
     width: 25em;
     border-radius: 13px;
@@ -127,6 +136,26 @@ main{
 .prodSeleccionados-imgh2 h2{
     text-align: center;
     margin-bottom: 3em;
+}
+
+.botonSubir{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 3em;
+    background-color: rgb(245, 245, 245);
+
+    
+}
+
+.material-symbols-outlined{
+    width: 1em;
+    font-size: 4em;
+    font-weight: bold;
+    fill: #4E2780;
+    background-color: rgb(245, 245, 245);
+
 }
 
 /* -------- animaciones -------- */
@@ -141,14 +170,12 @@ main{
     100% {
         transform: scale(1);
         }
-    }
+}
 
 
 /* ----------- Media queries ------------- */
 
-
-
-@media( min-width: 370px) and (max-width: 768px){ 
+@media( min-width: 360px) and (max-width: 768px){ 
     .frase-video{
         padding: .5em;
     }  
@@ -159,6 +186,22 @@ main{
         .container-txtSecciones h2{
             font-size: 1.5em;
         }
+    
+        .destacados-imgh2{
+
+            width: 10em;
+        }
+        
+        .destacados-imgh2 img{
+            border-radius: 13px;
+            width: 9.9em;
+        }
+        
+        .destacados-imgh2 h2{
+            font-size: 1em;
+            padding-bottom: .5em;
+        }
+        
 
         .txtSeleccionados h2{
             font-size: 1em;
@@ -169,22 +212,24 @@ main{
     }    
     
         .prodSeleccionados-imgh2 img{
-            width: 17em;
+            width: 7.8em;
         }
 
         .prodSeleccionados-imgh2 h2{
-            font-size: 1.4em;
-        }  
+            font-size: .7em;
+        }
     
+
+
     .botonSubir{
-        display: none;
+        padding: .9em;
     }
 
-    svg{
-        display: none;
-    }    
+    .material-symbols-outlined{
+        width: 1em;
+        font-size: 1.8em;
 
-
+    }
 }
 
 @media( min-width: 768px) and (max-width:1024px){
@@ -195,6 +240,12 @@ main{
             font-size: 3em;
         }
     
+    .txtSeleccionados{
+        padding: 8em 0 0 0;
+        text-align: center;
+        font-size: 1.2em;
+        color: #4E2780;
+    }
     .prodSeleccionados{
         padding: 3em 1em 0;
     }    
@@ -206,22 +257,10 @@ main{
         .prodSeleccionados-imgh2 h2{
             font-size: 1.4em;
         }
-    
-    .botonSubir{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-bottom: 3em;
-        background-color: rgb(245, 245, 245);
-    }
 
-    svg{
-        width: 8em;
-        font-size: 11px;
-        fill: #4E2780;
+    .material-symbols-outlined{
+        font-size: 3em;
     }
-
 }
 
 @media( min-width: 1024px) and (max-width: 1630px){
@@ -241,21 +280,11 @@ main{
             font-size: 5em;
         }
 
-    .botonSubir{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-bottom: 3em;
-        background-color: rgb(245, 245, 245);
+    .material-symbols-outlined{
+        font-size: 3.5em;
     }
-
-    svg{
-        width: 8em;
-        font-size: 11px;
-        fill: #4E2780;
-    }   
 }
+
 
 @media (min-width:1630px) and (max-width: 1920px){
     .frase-video{
@@ -283,19 +312,4 @@ main{
             width: 18em;
         }
   
-    .botonSubir{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-bottom: 3em;
-        background-color: rgb(245, 245, 245);
-    }
-
-    svg{
-        width: 8em;
-        font-size: 11px;
-        fill: #4E2780;
-    }
-
 }
