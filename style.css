@@ -17,11 +17,13 @@ a{
     color: #000000;
     font-family: 'Pacifico', cursive;
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 5px 25px;
     text-decoration: none;
+    border-radius: 10px;
 }
 .nav-enlace:hover{
     background: rgba(178, 252, 252, 0.895);
+
 }
 nav {
     background: #ccccff;
