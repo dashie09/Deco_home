@@ -124,21 +124,21 @@ main{
     padding: 3em 10em 0 10em;
 }
 
-.prodSeleccionados-imgh2{
+.container__card, .prodSeleccionados-imgh2{
     padding: 1em;
 }
 
-.prodSeleccionados-imgh2 img:hover{
+.container__card img:hover{
     border: 1px solid rgba(0, 0, 0, 0.178);
 }
 
-.prodSeleccionados-imgh2 img{
-    width: 25em;
+.container__card img, .prodSeleccionados-imgh2 img{
+    width: 24em;
     border-radius: 13px;
     
 }
 
-.prodSeleccionados-imgh2 h2{
+.container__card h2, .prodSeleccionados-imgh2 h2{
     text-align: center;
     margin-bottom: 3em;
 }
@@ -216,11 +216,11 @@ main{
         padding: 3em 1em 0;
     }    
     
-        .prodSeleccionados-imgh2 img{
+        .container__card img, .prodSeleccionados-imgh2 img{
             width: 7.8em;
         }
 
-        .prodSeleccionados-imgh2 h2{
+        .container__card h2, .prodSeleccionados-imgh2 h2{
             font-size: .7em;
         }
     
@@ -255,11 +255,11 @@ main{
         padding: 3em 1em 0;
     }    
 
-        .prodSeleccionados-imgh2 img{
+        .container__card img, .prodSeleccionados-imgh2 img{
             width: 17em;
         }
 
-        .prodSeleccionados-imgh2 h2{
+        .container__card h2, .prodSeleccionados-imgh2 h2{
             font-size: 1.4em;
         }
 
@@ -273,7 +273,7 @@ main{
         padding: 3em 1em 0;
     } 
 
-        .prodSeleccionados-imgh2 img{
+        .container__card img,.prodSeleccionados-imgh2 img{
             width: 18em;
         }
 
@@ -313,7 +313,7 @@ main{
         padding: 3em 10em 0;
     } 
 
-        .prodSeleccionados-imgh2 img{
+        .container__card img,.prodSeleccionados-imgh2 img{
             width: 18em;
         }
   
@@ -332,11 +332,6 @@ main{
     margin-right: auto;
 }
 
-.container__card{
-    display: grid;
-    grid-template: repeat(3,1fr) / repeat(3,1fr);    
-    gap: 15px;
-}
 
 .title{
     text-align: center;
