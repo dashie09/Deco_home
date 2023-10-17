@@ -16,7 +16,24 @@ a{
     text-decoration: none;
     color:#4E2780;
 }
-
+.nav-enlace{
+    display: inline-block;
+    background: #fed19c;
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: rgba(178, 252, 252, 0.895);
+}
+nav {
+    background: #ccccff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
 main{
     background-color: rgb(245, 245, 245);
 }
