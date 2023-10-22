@@ -11,25 +11,31 @@
 a{
     text-decoration: none;
 }
+#imagen_logo{
+    height: 5em;
+    
+    
+}
 .nav-enlace{
     display: inline-block;
-    background: #fed19c;
-    color: #000000;
-    font-family: 'Pacifico', cursive;
+    color: #ffffff;
     font-size: 20px;
     padding: 5px 25px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .nav-enlace:hover{
-    background: rgba(178, 252, 252, 0.895);
-
+    background: #8d66c7;
 }
 nav {
-    background: #ccccff;
+    background: #4e2788;
     padding: 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 main{
     background-color: rgb(245, 245, 245);
