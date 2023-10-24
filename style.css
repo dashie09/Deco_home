@@ -185,119 +185,74 @@ main{
 }
 
 
-/* -----------------------                 ESTILOS DE LAS DIFERENTES                  ---------------------------- */
-
-/* .contenedor--textiles{
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 13px;
-} */
+/* -----------------------                 ESTILOS DE LAS DIFERENTES PAGINAS              ---------------------------- */
 
 
-/* .title{
-    text-align: center;
-    padding: 2em 0 5em 0;
-} */
 
-/* .item img{
-    width: 25em;
-    height: 25em;
-    object-fit: cover;
-} */
-
-/* .slider-frame{
-    width: 80em;
+.slider-frame {
+    width: 1280px;
     height: auto;
-    overflow: hidden;
-    margin: 50px auto 0;
+	margin:50px auto 0;
+	overflow: hidden;
     border-radius: 20px;
+}
 
-} */
-
-/* .slider-frame ul{
+.slider-frame ul {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 15s infinite alternate ease-in-out;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+.slider-frame li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	list-style: none;
     position: relative;
 }
 
-.slider-frame li{
-    list-style: none;
+.slider-frame img {
     width: 100%;
 }
 
-.slider-frame img{
-    width: 100%;
-    height: 100%;
-} */
-
-.slider-frame{
-    display: flex;
-    justify-content: center;
-}
-
-.slider-container{
-    width: 100vw;
-    max-width: 1280px;
-    height: 720px;
-    overflow: hidden;
-    border-radius: 30px;
-}
-
-.slider-container ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    height: 101%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
-
-.slider-frame img{
-    width: 100%;
-    height: 100%;
-} 
-
-@keyframes slide {
-    0% {
-        margin-left: 0%;
-    }
-    20% {
-        margin-left:0%;
-    }
-    25% {
-        margin-left: -100%;
-    }
-    45% {
-        margin-left: -100%;
-    }
-    50%{
-        margin-left: -200%;
-    }
-    70%{
-        margin-left: -200%;
-    }
-    75%{
-        margin-left: -300%;
-    }
-    100%{
-        margin-left: -300%;
-    }
-
-}
-
+ 
 .titulo-slider{
-        position: absolute;
-        top: 108%;
-        left: 50%;
-        font-size: 10em;
-        transform: translate(-50%, -50%);
-        color: #D1C3F3;
-        text-shadow: 4px 5px 1px #4E2780;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #D1C3F3;
+    text-shadow: 8px 5px 1px #4E2780;
+    border: 1px solid rgb(228, 195, 243);
+    padding: 1em;
+    width: 60%;
+}  
+
+    .frase-slider{
+        font-size: 9em;
+        margin-bottom: 10px;
         text-align: center;
-        width: 90%;
-}
+    }
+
 
 
 
