@@ -1,0 +1,395 @@
+/* -----------------------                 ESTILOS DEL HOME                 ---------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+}
+
+a{
+text-decoration: none;
+color:#4E2780;
+}
+
+body{
+background-color: rgb(245, 245, 245);
+
+}
+
+.web__container{
+    margin-top: 7em;
+    color:#4E2780;
+}
+
+.destacados{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.destacadosb{
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap
+}
+
+.margin-btm-extra{
+margin-bottom: 12em;
+}
+
+.margin-top-extra{
+margin-top:10em;
+}
+
+.container-imgh2{
+display: flex;
+align-items: center;
+text-align: center;
+width: 100%;
+color: #4E2780;
+}
+
+.destacados-imgh2b{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+border: 1px solid rgba(0, 0, 0, 0.13);
+border-radius: 13px;
+box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.062);
+width: 14em;
+}
+
+.destacados-imgh2b img{
+width: 12em;
+}
+
+.destacados-imgh2b:hover{
+transform: scale(0,9.0,5);
+transition: 0.1s;
+box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.destacados-imgh2b img{
+    padding-bottom: 1em;
+}
+
+.destacados-imgh2b h2{
+    padding-bottom: .9em;
+}
+
+.ajuste-fuente{
+font-size: 1.4em;
+}   
+
+.txtSeleccionados{
+padding: 8em 0 0 0;
+text-align: center;
+font-size: 1.5em;
+color: #4E2780;
+}
+
+.prodSeleccionadosb{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+padding: 3em 10em 0 10em;
+padding: 3em 10em 0;
+}
+
+.content p{
+font-size: 19px;
+color: white;
+}
+
+.prodSeleccionados-imgh2b{
+padding: 1em;
+}
+
+.prodSeleccionados-imgh2b img:hover{
+border: 3px solid rgba(112, 6, 212, 0.185);
+}
+
+.prodSeleccionados-imgh2b img{
+width: 18em;
+border-radius: 13px;
+}
+
+.prodSeleccionados-imgh2b h2{
+text-align: center;
+margin-bottom: 3em;
+}
+
+.botonSubir{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 3em;
+background-color: rgb(245, 245, 245);   
+}
+
+.material-symbols-outlined{
+width: 1em;
+font-size: 4em;
+font-weight: bold;
+fill: #4E2780;
+background-color: rgb(245, 245, 245);
+
+}
+
+/* -------- animaciones -------- */
+
+@keyframes animacionTexto {
+0% {
+    transform: scale(.9);
+}
+50% {
+    transform: scale(1);
+}
+100% {
+    transform: scale(1);
+    }
+}
+
+
+/* -----------------------                 ESTILOS DE LAS DIFERENTES PAGINAS              ---------------------------- */
+
+
+.container-titulo{
+
+    font-size: 3em;   
+    padding: 1em 0 2em 0;
+    text-align: center;
+    color:#4E2780
+    }
+
+.slider{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;  
+  
+}
+.slider ul{
+    display: flex;
+    animation: cambio 30s infinite alternate linear;
+    width: 400%;
+    
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+
+
+@media( min-width: 350px) and (max-width: 500px){
+    .container-txtSecciones h2{
+        font-size: 1.5em;
+    }
+
+    .destacados-imgh2b{
+
+        width: 10em;
+    }
+    
+    .destacados-imgh2b img{
+        border-radius: 13px;
+        width: 9.9em;
+    }
+    
+    .destacados-imgh2b h2{
+        font-size: 1em;
+        padding-bottom: .5em;
+    }
+    
+
+    .txtSeleccionados h2{
+        font-size: 1em;
+    }
+
+
+    .container-titulo h2{
+        font-size: .7em;
+    }
+
+    .slider{
+        display: block;
+        height: 300px;
+        
+    }
+    
+  
+.prodSeleccionados{
+    padding: 1em 1em 0;
+}    
+
+.margin-btm-extra{
+    margin-bottom: 5em;
+}
+.margin-top-extra{
+    margin-top: 1em;
+}
+
+.prodSeleccionados-imgh2b img{
+        width: 8em;
+    }
+.prodSeleccionados-imgh2b h2{
+        font-size: .7em;
+    }
+    
+
+
+/* .titulo-slider{
+    font-size: .2em;
+    top: 118%; 
+}
+
+.frase-slider{
+    font-size: 9em;
+    padding: .4em;
+    text-align: center;
+} */
+
+
+.botonSubir{
+    padding: .9em;
+}
+
+.material-symbols-outlined{
+    width: 1em;
+    font-size: 1.8em;
+
+}
+}
+
+
+
+
+
+
+@media( min-width: 500px) and (max-width:768px){
+
+.txtSeleccionados{
+    padding: 8em 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: #4E2780;
+}
+.prodSeleccionados{
+    padding: 3em 1em 0;
+}    
+
+
+.prodSeleccionados-imgh2b img {
+    width: 12em;
+    border-radius: 13px;
+}
+
+.prodSeleccionados-imgh2b h2{
+    font-size:1.1em ;
+}
+
+.margin-top-extra{
+    margin-top: 0;
+}
+
+
+.material-symbols-outlined{
+    font-size: 3em;
+}
+
+/* 
+
+.slider-frame{
+    width: 100%;
+    padding: 0 2em;
+} */
+
+.titulo-slider{
+    padding-top: 1em;
+    font-size: .7em;
+}
+
+.sliderb{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+@media( min-width:768px ) and (max-width: 1280px){
+.prodSeleccionados{
+    padding: 3em 1em 0;
+} 
+
+.margin-top-extra{
+    margin-top: .4;
+}
+
+/*     
+.titulo-sliderb{
+border: 1px solid rgb(228, 195, 243);
+padding: 3em 0;
+width: 70%;
+top: 115%;
+left: 50%;
+}  */
+
+/* .frase-slider{
+    font-size: 8em;
+
+} */
+
+.slider{
+    height: 400px;
+}
+
+/* .sliderb{
+    display: none;
+} */
+}
+
