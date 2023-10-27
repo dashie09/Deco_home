@@ -134,6 +134,12 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap
 }
+
+.navFormulario{
+margin-bottom: 7em;
+}
+
+
 .txtSeleccionados h2{
     font-size: 2em;
     padding-bottom:2em;
@@ -334,8 +340,11 @@ flex-wrap: wrap
     100%{margin-left: -300%;}
 }
 
-
-
+.bg{
+    background-image: url("./imagenes-y-videos/logo_png.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 @media( min-width: 350px) and (max-width: 500px){ 
     nav{

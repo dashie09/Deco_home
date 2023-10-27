@@ -8,7 +8,7 @@
     <title>Deco & Home</title>
 </head>
 <body>
-<header>
+<header class="navFormulario">
     <nav>
         <a href="index.html">
             <div class="container-logo">
@@ -26,7 +26,7 @@
 </header>
 <main  id="inicio-pagina">       
             <!-- ---------- secciones destacadas -------------- -->
-        <section class="destacados">
+        <!-- <section class="destacadosc">
             <a href="./textiles.html">
                 <div class="destacados-imgh2">
                     <img src="./imagenes-y-videos/textil-a.jpg" alt="">
@@ -63,10 +63,10 @@
                     <h2>ILUMINACIÓN</h2>
                 </div>
             </a>
-        </section>
-        <div class="container-txtSecciones">
+        </section> -->
+        <!-- <div class="container-txtSecciones">
             <h2>RECIBE NUESTRO NEWSLETTER 📨<br>Y ENTERATE DE TODAS LAS NOVEDADES</h2>
-        </div>
+        </div> -->
 
        
             <!-- <div class="mb-3">
@@ -88,10 +88,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form> -->
- <div class="form-container">
+ <!-- <div class="form-container">
     <div class="container">
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-4">
+            <div class="col-12">
                 <label for="nameId" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nameId" placeholder="Ingrese su nombre" required>
                 <div class="valid-feedback">
@@ -101,7 +101,7 @@
                     <p>❌ Es necesario que ingrese su nombre</p>
                 </div>
             </div>
-            <div class="col-4 mt-5">
+            <div class="col-12 mt-5">
                 <label for="surnameId" class="form-label">Apellido</label>
                 <input type="text" class="form-control" id="surnameId" placeholder="Ingrese su apellido" required>
                 <div class="valid-feedback">
@@ -111,12 +111,12 @@
                     ❌ Es necesario que ingrese su apellido
                 </div>
             </div>
-            <div class="col-4 mt-5">
+            <div class="col-12 mt-5">
                 <div class="">
                     <label for="emailInput" class="form-label">Ingrese su e-mail</label>
                     <input id="emailInput" class="form-control" type="email" placeholder="Ingrese su email" required>
                 </div>
-                <div class="col-4 mt-5">
+                <div class="col-12 mt-5">
                     <label for="pais">País</label>
                     <select name="pais" id="pais" class="form-select" required>
                         <option selected disabled value="">Seleccione...</option>
@@ -146,6 +146,82 @@
 
         </form>
     </div>  
+</div> -->
+
+
+<div class="container w-75 rounded-5">
+    <div class="row  shadow">
+        <div class="col bg d-none d-lg-block mt-5">
+
+        </div>
+        <div class="col">
+            <h2 class="fw-bold text-center fs-3 py-5">RECIBE NUESTRO NEWSLETTER 📨<br>Y ENTERATE DE TODAS LAS NOVEDADES</h2>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                    <label for="nameId" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nameId" placeholder="Ingrese su nombre" required>
+                    <div class="valid-feedback">
+                        <p>✔ Nombre ingresado</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        <p>❌ Es necesario que ingrese su nombre</p>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <label for="surnameId" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="surnameId" placeholder="Ingrese su apellido" required>
+                    <div class="valid-feedback">
+                        <p>✔ Apellido ingresado</p>
+                    </div>
+                    <div class="invalid-feedback">
+                        ❌ Es necesario que ingrese su apellido
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="">
+                        <label for="emailInput" class="form-label">Ingrese su e-mail</label>
+                        <input id="emailInput" class="form-control" type="email" placeholder="Ingrese su email" required>
+                        <div class="valid-feedback">
+                            <p>✔ Has ingresado tu correo electrónico</p>
+                        </div>
+                        <div class="invalid-feedback">
+                            <p>❌ Es necesario que ingrese su correo electrónico</p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <label for="pais">País</label>
+                        <select name="pais" id="pais" class="form-select" required>
+                            <option selected disabled value="">Seleccione...</option>
+                            <option value="">Argentina</option>
+                            <option value="">México</option>
+                            <option value="">Colombia</option>
+                            <option value="">Venezuela</option>
+                            <option value="">Perú</option>
+                        </select>
+                        <div class="valid-feedback">
+                            <p>✔ País ingresado</p>
+                        </div>
+                        <div class="invalid-feedback">
+                            <p>❌ Es necesario que ingrese su país</p>
+                        </div>
+                    </div>
+                    <div class="form-check mt-5">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label for="terms" class="form-check-label" >Acepto los términos y condiciones</label>
+                        <div class="valid-feedback">
+                            <p>✔ Condiciones aceptadas</p>
+                        </div>
+                        <div class="invalid-feedback">
+                            <p>❌ Es necesario que aceptes las condiciones</p>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary mt-5 mb-5">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
