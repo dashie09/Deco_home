@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Deco & Home</title>
 </head>
@@ -20,7 +21,6 @@
             <a class="nav-enlace" href="cocina.html">COCINA</a>
             <a class="nav-enlace" href="habitaciones.html">HABITACIONES</a>
             <a class="nav-enlace" href="baño.html">BAÑO</a>
-            <a class="nav-enlace" href="novedades.html">NOVEDADES</a>
         </div>
     </nav>  
 </header>
@@ -155,8 +155,8 @@
 
         </div>
         <div class="col p-5">
-            <h2 class="fw-bold text-center col-sm-fs-3 py-5">📨 <br>RECIBE NUESTRO NEWSLETTER <br>Y ENTERATE DE TODAS LAS NOVEDADES</h2>
-            <form class="row g-3 needs-validation" action="https://formspree.io/f/xwkwpwag"
+            <h2 class="fw-bold text-center col-xl-fs-4 col-sm-fs-3 py-5"><br>RECIBE NUESTRO NEWSLETTER <br>Y ENTERATE DE TODAS LAS NOVEDADES</h2>
+            <form id="contact-form" class="row g-3 needs-validation" action="https://formspree.io/f/xwkwpwag"
             method="POST" novalidate>
                 <div class="col-12">
                     <label for="nameId" class="form-label">Nombre</label>
@@ -224,49 +224,7 @@
         </div>
     </div>
 </div>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-    </script>
-
-    <script>
-        const $form = document.querySelector('#form')
-        
-        $form.addEventListener('submit', handleSubmit)
-
-        async function handleSubmit(event){
-            event.preventDefault()
-            const form = new formData(this)
-            const response = fetch(this.action,{
-                method: this.method,
-                body: form, 
-                header:{
-                    'Accept': 'application/json'
-                }
-            })
-            if (response.ok){
-                this.reset()
-                alert('Gracias por contactarnos, te enviaremos pronto más novedades')
-            }
-        }
-    </script>
 </body>
 
 </html>
