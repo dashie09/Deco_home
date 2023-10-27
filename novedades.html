@@ -156,7 +156,8 @@
         </div>
         <div class="col p-5">
             <h2 class="fw-bold text-center col-sm-fs-3 py-5">📨 <br>RECIBE NUESTRO NEWSLETTER <br>Y ENTERATE DE TODAS LAS NOVEDADES</h2>
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row g-3 needs-validation" action="https://formspree.io/f/xwkwpwag"
+            method="POST" novalidate>
                 <div class="col-12">
                     <label for="nameId" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nameId" placeholder="Ingrese su nombre" required>
@@ -243,6 +244,28 @@
     }, false)
   })
 })()
+    </script>
+
+    <script>
+        const $form = document.querySelector('#form')
+        
+        $form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit(event){
+            event.preventDefault()
+            const form = new formData(this)
+            const response = fetch(this.action,{
+                method: this.method,
+                body: form, 
+                header:{
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok){
+                this.reset()
+                alert('Gracias por contactarnos, te enviaremos pronto más novedades')
+            }
+        }
     </script>
 </body>
 </html>
