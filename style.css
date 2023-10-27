@@ -632,7 +632,41 @@ flex-wrap: wrap
 
 }
 
-
+footer{
+    color: rgb(255, 255, 255);
+    background-color:#373b3e;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+     margin-top: auto;
+    height: 5em;
+    bottom: 0;
+    width: 100%;
+ }
+ .buttons{
+     min-width: 350px;
+     display: flex;
+     justify-content: space-around; 
+ }
+ .buttons a{
+     text-decoration: none;
+     font-size: 22px;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     border-radius: 50%;
+     box-shadow: 2px 2px 7px rgba(0, 0, 0, .8); 
+     transition: all .2s ease-in-out;
+ }
+ .buttons a:hover{
+     transform: scale(1.5);
+     color: #ffffff;
+     background-color: #4E2780;
+ }
+ 
 
 
 
