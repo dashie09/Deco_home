@@ -51,7 +51,7 @@ nav {
    padding-left: 4em;
 }
 
-.container-links{
+.containerLinks{
   display:flex;
   align-items:center;
 }
@@ -363,7 +363,7 @@ margin-bottom: 7em;
         align-items: center;
     }
 
-    .container-links{
+    .containerLinks{
         display: flex;
         padding: 1px .1px;
         justify-content: center;
@@ -504,7 +504,7 @@ margin-bottom: 7em;
         height: 4em;
     }
 
-    .container-links a{
+    .containerLinks a{
         font-size: 1em;
     }
     
