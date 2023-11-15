@@ -409,7 +409,128 @@ margin-bottom: 7em;
       height: 100%;
   }
   
-  
+  footer{
+    color: rgb(255, 255, 255);
+    background-color: #4E2780;
+    display: flex;
+     flex-direction: column;
+    flex-wrap: nowrap;
+     justify-content: center;
+    align-items: center;
+    height: 50em;
+    width: 100%;
+ }
+
+.contenedorLinks{
+  display:flex;
+  flex-direction:row;
+}
+
+.container-footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  padding: 3em 10em;
+}
+
+.container-footer a{
+  color:white;
+  font-size: 1.1em;
+  padding: 1em 2em;
+}
+
+.footer-maps{
+  width: 100%;
+  height:19em;
+}
+
+.footer-redes{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 13em;
+}
+ .buttons{ 
+   display:flex;
+   flex-direction:center;
+ }
+ .buttons a{
+    display:flex;
+   flex-direction:row;
+   align-items:center;
+     justify-content: center;
+     text-decoration: none;
+     font-size: 22px;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     border-radius: 50%;
+     box-shadow: 2px 2px 7px rgba(0, 0, 0, .8); 
+     transition: all .2s ease-in-out;
+ }
+ .buttons a:hover{
+     transform: scale(1.3);
+     color: #ffffff;
+     background-color: #9766d6;
+ }
+
+ .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+ }
+
+ .copyright p{
+    margin-bottom: 0;
+ }
+
+
+/* links del menu del nav */
+
+.titulo-link{
+    margin: 1em 0 4em 0;
+}
+
+.main-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15em auto;
+    max-width: 80%;
+}
+
+.main-link section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.main-link img{
+    border-radius: 10px;
+    width: 30em;
+}
+
+.main-link div{
+    padding: 3em;
+}
+
+.main-link p{
+    font-size: 1.2em;
+    font-family: "Futura", Arial, Helvetica, sans-serif;;
+    font-weight: 300;
+}
+
+
+
 @keyframes cambio{
     0%{margin-left: 0;}
     20%{margin-left: 0;}
@@ -728,127 +849,3 @@ margin-bottom: 7em;
 
 }
 
-footer{
-    color: rgb(255, 255, 255);
-    background-color: #4E2780;
-    display: flex;
-     flex-direction: column;
-    flex-wrap: nowrap;
-     justify-content: center;
-    align-items: center;
-    height: 50em;
-    width: 100%;
- }
-
-.contenedorLinks{
-  display:flex;
-  flex-direction:row;
-}
-
-.container-footer{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  padding: 3em 10em;
-}
-
-.container-footer a{
-  color:white;
-  font-size: 1.1em;
-  padding: 1em 2em;
-}
-
-.footer-maps{
-  width: 100%;
-  height:19em;
-}
-
-.footer-redes{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height: 13em;
-}
- .buttons{ 
-   display:flex;
-   flex-direction:center;
- }
- .buttons a{
-    display:flex;
-   flex-direction:row;
-   align-items:center;
-     justify-content: center;
-     text-decoration: none;
-     font-size: 22px;
-     width: 40px;
-     height: 40px;
-     line-height: 40px;
-     text-align: center;
-     background-color: rgb(255, 255, 255);
-     color: rgb(0, 0, 0);
-     border-radius: 50%;
-     box-shadow: 2px 2px 7px rgba(0, 0, 0, .8); 
-     transition: all .2s ease-in-out;
- }
- .buttons a:hover{
-     transform: scale(1.3);
-     color: #ffffff;
-     background-color: #9766d6;
- }
-
- .copyright{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-top: 1px solid rgb(255, 255, 255);
- }
-
- .copyright p{
-    margin-bottom: 0;
- }
-
-/* 
-.container-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
-
-.titulo-cocina{
-    margin: 1em 0 4em 0;
-}
-
-.main-cocina{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15em auto;
-    max-width: 80%;
-}
-
-.main-cocina section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-cocina img{
-    border-radius: 10px;
-    width: 30em;
-}
-
-.main-cocina div{
-    padding: 3em;
-}
-
-.main-cocina p{
-    font-size: 1.2em;
-}
