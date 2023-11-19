@@ -21,4 +21,3 @@ async function handleSubmit(event){
         alert('Gracias por contactarnos, te enviaremos pronto más novedades')
     }
 }
-
